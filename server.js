@@ -1,32 +1,46 @@
-const http = require('http');
+const express = require('express');
+const app = express();
 
-// const server = http.createServer(() => {
-//     console.log( 'i hear you! ');
-// })
+const database = { 
+    users: [
+        {
+            id: '123',
+            name: 'John',
+            email: 'john@gmail.com',
+            password: 'cook123',
+            entries: 0,
+            joined: new Date()
+        }, 
+        {
+            id: '1234',
+            name: 'Sam',
+            email: 'Sam@gmail.com',
+            password: 'bandana',
+            entries: 0,
+            joined: new Date() 
+        }
+    ]
+}
 
-// server.listen(3001);
-
-//then go to local host 3000 in your web browser. port 3000.
-
-const server = http.createServer((request, response) => {
-    //console.log('headers' , request.headers)
-    console.log('method', request.method)
-    console.log('url', request.url)
-    const user = {
-        name: 'jame',
-        hobbies: 'skateboarding'
-    }
-
-    // response.setHeader('Content-Type', 'Text/html');
-    response.setHeader('Content-Type', 'application/json'); //for json
-    response.end(JSON.stringify(user));
-    // response.end('<h1> Helllooo >/h1>')
-
+// create a basic route. 
+app.get('/', (req, res) => {
+    res.send('this is working! ');
 })
 
-// you get json format. 
+app.post('/signin', (req , res) => {
+    res.send('signing -hello')
+    res.json('signing')
+})
 
-server.listen(3001);
+app.listen(3000, () => {
+    console.log('app is running on port 3000');
+})
 
-// you just built your very first server. next we will use express .js as 
-// a tool. 
+/* Our projects endpoint layout 
+/ --> res = this is working
+/sigin --> POST = success/fail
+/register --> POST = user
+/profile/:userId --> GET = user
+/image --> PUT --> user
+We will test them with postman to make sure they are working. 
+*/
