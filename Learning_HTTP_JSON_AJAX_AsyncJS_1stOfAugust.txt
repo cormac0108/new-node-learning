@@ -1,0 +1,48 @@
+
+HTTP/HTTPS:
+the world wide web.  a protocol. a standard.  HTTP is a protocol. that allows the fetching of 
+resources. clients and servers can communicate by sending messages over the internet. 
+requests to a server and the server responds.   HTTP is the language that lets us communicate
+between client and server.  A protocol, HTTP is simple we have 4 methods: 
+HTTP request:
+GET, POST, PUT , DELETE 
+Ajax- fetch documents and update a webpage on demand. 
+
+server status codes - response from the server.
+
+go to example.com and go to dev tools. then network tab. 
+turn off the filter.  refresh the page.  check the headers,  then response. tab. 
+
+sending data to a server? our register.html  file form we made.   POST  . two ways:
+1. Query strings.  Key and value. method="GET"   
+2. the second way is sending info through the body. to do this we use a POST request.
+to send some data to the server ...  A post form. 
+
+one solution to the privacy issue was HTTPS - hypertext transfer protocol secure.
+Uses transport layer security.  encrypted. now the potential hacker will only get gibberish. 
+make sure to use HTTPS.   the form - now we can send more data. using get or post. 
+through a body or a query string. 
+client server communication. 
+
+
+JSON: JavaScript Object Notation
+JSON is a syntax for storing and exchanging data.
+JSON is text, written with JavaScript object notation.   
+its used to send data between machines.  An object tree? JSON is better. 
+
+JSON:   A STANDARD WAY TO SEND DATA OVER THE WIRES and to receive it.  both XML and JSOn can
+be used to receuve data from a web server. JSON uses a JS object like synthax.  
+JSON format is better. more efficient.   in JSON everything has to be a string wrapped 
+around double quotes "" ...  
+javascript comes with its own json function -   JSON.parse()   ... also  JSON.stringify(obj);
+stringify to convert it into a json string, then send it to the webserver . over HTTP. 
+
+Originally, the only way to submit some form data to a server was through the <form> tag in 
+HTML. As we have learned, it can do a POST or a GET request. With JSON you can now grab the 
+contents of the <input> in a form and submit those with JSON instead of as a form data. You 
+can now submit to the server 
+whenever you want without it necessarily being a <form>, through AJAX.. What is AJAX you might 
+say?
+
+
+

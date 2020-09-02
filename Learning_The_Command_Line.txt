@@ -1,0 +1,99 @@
+
+ls
+pwd
+cd 
+cd ..
+clear
+cd / **—> root director**
+cd ~
+cd <folder/folder/folder> ** <> means to add your own folder names that exist on your computer.
+mkdir <folder>
+open <folder> **for windows use: start <folder>
+touch index.html  **for windows use: echo "" > index.html
+open index.html **for windows use: start index.html
+open -a “Sublime Text”  **for windows see the note about this at the bottom of this lecture!!
+open . **for windows use: start .
+mv index.html about.html
+*Try using the Up and Down arrow.
+ 
+rm <file>
+rm -r <folder>
+say hello **(only on Mac)**
+
+Windows ONLY: How to open -a “Sublime Text”  in windows?
+
+**Assuming your Sublime Text 3 was located in the "C:\Program Files\Sublime Text 3" directory**
+
+1. In Git Bash copy paste and run:
+echo 'alias subl="/C/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"' >> ~/.bashrc
+
+2. Close Git Bash and Open it again.
+
+
+
+3. In Git bash type:
+
+subl
+
+
+being able to use the terminal or the command line. windows = command prompt.  before the GUI. 
+command lines are really useful. THey are faster. Access servers via the command line. servers, databases.
+download scripts. Version command.  
+ls - lists    
+pwd - present working directory  
+cd - to go into this 
+cd .. this brings you bacl to one directory up
+clear - or cls to clear your terminal. 
+cd /  to go to your root directory
+cd ~ will take you to the user directory
+cd Desktop/test 
+open .   opens the folder we are currently in
+mkdir - name  - would be whatever you want your folder to be titled. mkdir webapp
+cd webapp
+echo > index.html    to create a file on windows.
+touch index.html to create a file
+start .    opens the folder we are currently in (on windows)
+start index.html
+open index.html 
+open -a "Sublime Text"   if we wanted to open sublime text 
+open -a "Sublime Text" index.html  - if we wanted to open the index.html file in sublime text 
+open index.html 
+
+do things really fast
+
+mv index.html about.html   - will move the file (change its name)  on windows this would be
+rename index.html about.html  - will rename the file to about.html (on windows) its a little trick 
+you creat a new file and you replace it with the old one 
+you can press the tab key and it will finish your thought.
+you can press the arrow keys to toggle through your command history.
+
+rm about.html   -  for remove  (on windows) del about.html
+ls 
+pwd
+cd ..
+rm -r webapp  (to delete the web app folder we need the -r because it is a folder ) 
+del -r webapp (in windows. ....)
+cd ..          - to go back 
+rm -r test   - to remove your folder called test. 
+say this is sooo cool  (in the terminal on mac)
+
+from now on use the terminal and try creating files and folders this way. 
+
+use the    reset <enter>   - to fix your git bash when it is being buggy
+use    ctrl + c -  to kill the server when bash isnt working
+
+
+the command line /  terminal -   bash is a type of shell that a terminal . commadn line can have.
+Bash - its a casing around the terminal . that is customizable. customizable.  
+nano ~/.bash_profile           ---- you opened the bash profile.  
+now you can put in the terminal things you wwant to do.  CTRL + X to exit.
+you can copy anf paste in code from make tech easier -  8 useful and interesting bash prompts. 5. show 
+run path.  press y to save modify. 
+source ~/.bash_profile    - and it essentially reloads our profile now. now we have a cool prompt. 
+you can change the color of your shell.   a shell  called fishell   ... install using homebrew on a mac.
+copy the link into your terminal. brew install fish.   iTerm2   for the mac 
+gitBash for windows. bash shell   vs fishell.
+type in    bash    to get taken to the bash profile   and type  in fish to go to the fishell .
+now you have a nice enviroment you can work in. 
+
+has you become better at web devlopment you will get more familiar with the command line.  
